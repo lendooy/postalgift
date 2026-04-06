@@ -4,15 +4,24 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
-    $lescolis=0;
-    return view('welcome',["lescolis"=>$lescolis]);
+    $nom="ali ";
+    return view('welcome',['nom'=>$nom]);
 });
 
-Route::get('/register',function(){
-    return view('register');
+
+Route::get('/form',function(){
+
+    return view('leformulairepays');
 });
 
-Route::post("/register",function(Request $request ){
-    dd($request->All());
-    return "colis enregistrer";
+
+Route::post('/form',function(){
+
+    return "enregister avec succes ";
+});
+
+
+Route::get('listeEtudiant',function(){
+    $listEtu = ["Ali","Idriss","Moussa","samir"];
+    return view('listeEtudiant',compact('listEtu'));
 });

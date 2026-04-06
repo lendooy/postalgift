@@ -7,25 +7,19 @@
     <title>Parcel management system</title>
 </head>
 <body>
-    Postal gift bienvenue chez postal gift 
-    
-    
-    <img  width="80" src="{{asset("asset/images/box_parcel.jpg")}}">
+
+    bienvenue {{ $nom}}
+
+    les etudiants :
     <br>
 
-    @if ($lescolis>0)
-        <p> il ya {{ $lescolis}} colis</p> 
-    @else
-        il pas de colis
-    
-    @endif
-
+    ajouter un etudiant 
     <br>
 
-      <a href="{{url('/register')}}" > enregistrer un colis</>
-   
- 
+    <a href="/form">ajouter etudiant</a>
 
+    <br>
+    {{config("app.name")}}
     
 </body>
 </html>

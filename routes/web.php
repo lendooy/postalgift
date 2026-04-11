@@ -27,5 +27,7 @@ Route::post('/form',function(){
 
 Route::get('listeEtudiant',function(){
     $listEtu = ["Ali","Idriss","Moussa","samir"];
+
+    //controller les donners
     return view('listeEtudiant',compact('listEtu'));
 });

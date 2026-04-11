@@ -20,6 +20,10 @@ Route::post('/form',function(){
     return "enregister avec succes ";
 });
 
+//teste des controlleur
+
+
+
 
 Route::get('listeEtudiant',function(){
     $listEtu = ["Ali","Idriss","Moussa","samir"];

@@ -20,6 +20,7 @@
 
     <br>
     {{config("app.name")}}
+    // Teste de config
     
 </body>
 </html>

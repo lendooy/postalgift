@@ -7,7 +7,7 @@
     <title>Parcel management system</title>
 </head>
 <body>
-
+//les teste de la vue
     bienvenue {{ $nom}}
 
     les etudiants :

@@ -31,3 +31,4 @@ Route::get('listeEtudiant',function(){
     //controller les donners
     return view('listeEtudiant',compact('listEtu'));
 });
+//les route
